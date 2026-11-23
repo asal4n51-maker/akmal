@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-app: #0B0E17;
+  --bg-surface: #131826;
+  --bg-surface-2: #1A2133;
+  --border-color: rgba(148, 163, 184, 0.16);
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+}
+
+html.light {
+  --bg-app: #F1F5F9;
+  --bg-surface: #FFFFFF;
+  --bg-surface-2: #F8FAFC;
+  --border-color: rgba(15, 23, 42, 0.12);
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+}
+
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+}
+
+.input-field, .select-field {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 11px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface-2);
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 14px;
+  border-radius: 11px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn-primary { background: #2563EB; color: #fff; }
+.btn-success { background: #059669; color: #fff; }
+.btn-warning { background: #D97706; color: #fff; }
+.btn-danger { background: #DC2626; color: #fff; }
+.btn-purple { background: #7C3AED; color: #fff; }
+.btn-cyan { background: #0891B2; color: #fff; }
+.btn-ghost { background: var(--bg-surface-2); color: var(--text-primary); border-color: var(--border-color); }
+
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-color);
+}
+td { padding: 11px 12px; border-bottom: 1px solid var(--border-color); }
