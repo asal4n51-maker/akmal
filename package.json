@@ -1,25 +1,17 @@
 {
-  "name": "hachinet-frontend",
-  "private": true,
+  "name": "hachinet-backend",
   "version": "2.3.0",
-  "type": "module",
+  "description": "Backend Node.js/Express HachiNet dengan API Key, Shared DB JSON, MikroTik RouterOS API, dan Telnet OLT",
+  "main": "backend.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node backend.js",
+    "dev": "node backend.js"
   },
   "dependencies": {
-    "lucide-react": "^0.454.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.3",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14",
-    "vite": "^5.4.10"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "node-routeros": "^1.6.7",
+    "telnet-client": "^2.2.0"
   }
 }
